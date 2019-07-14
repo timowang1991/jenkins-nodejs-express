@@ -1,5 +1,7 @@
 FROM node:8-alpine
 
+USER root
+
 ENV HOME=.
 ENV npm_config_cache=npm-cache
 
