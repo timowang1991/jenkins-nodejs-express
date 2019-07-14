@@ -1,7 +1,8 @@
 FROM node:8-alpine
 
-COPY . /workspace
-WORKDIR /workspace
+RUN mkdir -p /app
+COPY . /app
+WORKDIR /app
 
 RUN npm install
 RUN npm run test
