@@ -1,6 +1,6 @@
 FROM node:8-alpine
 
-USER node
+USER root
 
 ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
 
