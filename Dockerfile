@@ -1,9 +1,8 @@
 FROM node:8-alpine
 
-USER root
+USER node
 
-ENV HOME=.
-ENV npm_config_cache=npm-cache
+ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
 
 RUN mkdir -p /app
 COPY . /app
