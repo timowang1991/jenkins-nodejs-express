@@ -1,6 +1,7 @@
 FROM node:8-alpine
 
 ENV HOME=.
+ENV npm_config_cache=npm-cache
 
 RUN mkdir -p /app
 COPY . /app
