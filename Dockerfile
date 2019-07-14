@@ -1,6 +1,6 @@
 FROM node:8-alpine
 
-USER root
+ENV HOME=.
 
 RUN mkdir -p /app
 COPY . /app
