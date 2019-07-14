@@ -6,9 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('Test') {
+    stage('User Examine') {
       steps {
-        sh 'npm run test'
+        input message: 'Finished using the web site? (Click "Proceed" to continue('
       }
     }
   }
