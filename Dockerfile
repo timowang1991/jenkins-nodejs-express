@@ -4,6 +4,7 @@ COPY . /workspace
 WORKDIR /workspace
 
 RUN npm install
+RUN npm run test
 
 EXPOSE 4443
 
