@@ -1,5 +1,7 @@
 FROM node:8-alpine
 
+USER root
+
 RUN mkdir -p /app
 COPY . /app
 WORKDIR /app
