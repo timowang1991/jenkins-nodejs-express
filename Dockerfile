@@ -2,8 +2,7 @@ FROM node:8-alpine
 
 USER root
 
-ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
-
+RUN sudo chmod -R $(whoami) /app
 RUN mkdir -p /app
 COPY . /app
 WORKDIR /app
