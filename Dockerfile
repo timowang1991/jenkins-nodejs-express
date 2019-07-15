@@ -3,7 +3,7 @@ FROM node:8-alpine
 USER root
 
 RUN mkdir -p /app
-RUN chown -R $(whoami) /app
+RUN chown -R $(whoami) /
 COPY . /app
 WORKDIR /app
 
