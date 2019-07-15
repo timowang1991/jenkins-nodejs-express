@@ -2,7 +2,7 @@ FROM node:8-alpine
 
 USER root
 
-RUN sudo chmod -R $(whoami) /app
+RUN sudo chown -R $(whoami) /app
 RUN mkdir -p /app
 COPY . /app
 WORKDIR /app
