@@ -5,8 +5,8 @@ USER root
 RUN mkdir -p /app
 RUN mkdir -p /.pm2
 
-RUN chown -R jenkins /app
-RUN chown -R jenkins /.pm2
+RUN chown -R root /app
+RUN chown -R root /.pm2
 
 COPY . /app
 WORKDIR /app
